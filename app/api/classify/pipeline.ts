@@ -1,7 +1,9 @@
 import { Pipeline, pipeline} from "@xenova/transformers";
 
-const task = 'text-classification';
-const model = 'Xenova/distilbert-base-uncased-finetuned-sst-2-english';
+// const task = 'text-classification';
+// const model = 'Xenova/distilbert-base-uncased-finetuned-sst-2-english';
+const task = 'sentiment-analysis';
+const model = 'nlptown/bert-base-multilingual-uncased-sentiment';
 
 let instance: Promise<Pipeline> | null = null;
 

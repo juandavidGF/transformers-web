@@ -21,6 +21,7 @@ export default function Home() {
 		if (!ready) setReady(true);
 		
 		const json = await result.json();
+    console.log(json);
 		setResult(json);
 	};
 

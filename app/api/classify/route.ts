@@ -17,6 +17,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 	
 	// Actually perform the classification
 	const result = await classifier(text);
+	console.log(result);
 	
 	return new NextResponse(JSON.stringify(result));
 }
